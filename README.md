@@ -1,30 +1,20 @@
-# Telco Customer Churn Classifier Comparison
+**Telco Customer Churn Classifier Comparison**
 
 A reproducible empirical study comparing classical and ensemble machine learning classification algorithms for customer churn prediction.
 
-## Overview
+**Overview**
 
-Customer churn prediction is a fundamental problem in customer relationship management and business analytics. The ability to identify customers who are likely to discontinue a service can help organizations develop targeted retention strategies and improve customer lifetime value.
+Customer churn prediction is a fundamental problem in customer relationship management and business analytics. The ability to identify customers who are likely to discontinue their service can help organizations develop targeted retention strategies and improve customer lifetime value.
 
-This project presents a systematic comparison of multiple supervised classification algorithms applied to the Telco Customer Churn dataset. The primary objective is to investigate how different algorithmic approaches perform under a consistent experimental framework and to analyze their relative strengths and limitations.
+This project presents a systematic comparison of multiple supervised classification algorithms applied to the Telco Customer Churn dataset. The study investigates how different algorithmic approaches perform under a consistent experimental framework and analyzes their relative strengths and limitations.
 
-The study emphasizes not only predictive performance but also model stability, computational efficiency, and sensitivity to data partitioning.
+The analysis considers not only predictive performance but also model stability, computational efficiency, and sensitivity to data partitioning.
 
-## Research Objectives
-
-The main objectives of this project are to:
-
-1. Implement and evaluate multiple classification algorithms using a consistent preprocessing and evaluation pipeline.
-2. Compare model performance using several complementary evaluation metrics.
-3. Investigate the effect of different random seeds and data partitions on predictive performance.
-4. Analyze the strengths and limitations of linear, probabilistic, distance-based, tree-based, ensemble, kernel-based, and neural network models.
-5. Identify the most suitable algorithms for customer churn classification based on predictive performance and computational considerations.
-
-## Dataset
+**Dataset**
 
 The project uses the Telco Customer Churn dataset, which contains customer-level information related to demographics, subscribed services, account information, and churn status.
 
-### Main Feature Categories
+**Main Feature Categories**
 
 * Customer demographics
 * Account information
@@ -42,7 +32,7 @@ Churn
 
 which indicates whether a customer discontinued the service.
 
-## Experimental Methodology
+**Experimental Methodology**
 
 The project follows a structured machine learning workflow:
 
@@ -71,7 +61,7 @@ Performance Comparison
 Statistical and Experimental Analysis
 ```
 
-### Data Partitioning
+**Data Partitioning**
 
 The dataset is divided into:
 
@@ -83,48 +73,48 @@ To investigate the sensitivity of model performance to data partitioning, experi
 
 This allows the study to examine whether model performance remains consistent under different train-validation-test partitions.
 
-## Classification Algorithms
+**Classification Algorithms**
 
 The following algorithms are evaluated under a unified experimental framework:
 
-### Linear Models
+**Linear Models**
 
 1. Logistic Regression
 2. Linear Discriminant Analysis
 
-### Distance-Based Models
+**Distance-Based Models**
 
 3. K-Nearest Neighbors
 
-### Probabilistic Models
+**Probabilistic Models**
 
 4. Gaussian Naive Bayes
 
-### Tree-Based Models
+**Tree-Based Models**
 
 5. Decision Tree
 
-### Ensemble Models
+**Ensemble Models**
 
 6. Random Forest
 7. AdaBoost
 8. Gradient Boosting
 
-### Kernel-Based Models
+**Kernel-Based Models**
 
 9. Support Vector Machine
 
-### Neural Network Models
+**Neural Network Models**
 
 10. Multi-Layer Perceptron
 
 This selection provides a broad comparison across fundamentally different machine learning paradigms.
 
-## Evaluation Framework
+**Evaluation Framework**
 
-Model performance is evaluated using multiple complementary metrics:
+Model performance is evaluated using multiple complementary metrics.
 
-### Predictive Performance
+**Predictive Performance**
 
 * Accuracy
 * Precision
@@ -132,20 +122,20 @@ Model performance is evaluated using multiple complementary metrics:
 * F1-score
 * ROC-AUC
 
-### Model Stability
+**Model Stability**
 
 * Cross-validation mean
 * Cross-validation standard deviation
 * Performance variation across random seeds
 
-### Computational Efficiency
+**Computational Efficiency**
 
 * Training time
 * Prediction time
 
 Using multiple metrics provides a more comprehensive assessment than relying on accuracy alone, particularly for churn prediction where identifying customers at risk of leaving may be more important than overall classification accuracy.
 
-## Project Structure
+**Project Structure**
 
 ```text
 telco-customer-churn-classifier-comparison/
@@ -184,7 +174,7 @@ telco-customer-churn-classifier-comparison/
 └── requirements.txt
 ```
 
-## Reproducibility
+**Reproducibility**
 
 All experiments are conducted using explicitly defined random seeds to ensure reproducibility.
 
@@ -197,7 +187,7 @@ This separation improves:
 * Experimental consistency
 * Code reusability
 
-## Technologies
+**Technologies**
 
 * Python
 * NumPy
@@ -207,16 +197,20 @@ This separation improves:
 * Seaborn
 * Jupyter Notebook
 
-## Project Status
+**Project Status**
 
 The project is currently under development. Final model comparisons, visualizations, and experimental findings will be added as the study progresses.
 
-## Academic Context
+**Academic Context**
 
 This project is being developed as part of an academic study in machine learning and applied mathematics, with a focus on empirical comparison of classification algorithms and reproducible computational experimentation.
 
-## Author
+**Research Objectives**
 
-Nishat Tethee Eeha
-Department of Applied Mathematics
-University of Dhaka
+The main objectives of this study are to:
+
+1. Implement and evaluate multiple classification algorithms using a consistent preprocessing and evaluation pipeline.
+2. Compare model performance using several complementary evaluation metrics.
+3. Investigate the effect of different random seeds and data partitions on predictive performance.
+4. Analyze the strengths and limitations of linear, probabilistic, distance-based, tree-based, ensemble, kernel-based, and neural network models.
+5. Identify suitable algorithms for customer churn classification based on predictive performance and computational considerations.
